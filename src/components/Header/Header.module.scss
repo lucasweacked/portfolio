@@ -1,0 +1,21 @@
+.cabecalho {
+    padding: 1% 15%;
+}
+
+.cabecalho__conteudo__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+}
+
+.cabecalho__conteudo__links_link {
+    list-style: none;
+}
+
+.cabecalho__conteudo__links_link a {
+    text-decoration: none;
+    font-family: var(--fontPrincipal);
+    font-size: 1.5rem;
+    color: var(--corPreto);
+}

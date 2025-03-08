@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --fontPrincipal: 'Inter', sans-serif;
+  --fontSecundaria: 'Montserrat', sans-serif;
+
+  --corPreto: #212121;
+  --corBranco: #f7f7f7;
+
+  --corSnow: #fcf7f8;
+  --corMadder: #a31621;
+  --corDarkBlue: #102542;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--corBranco);
+}
