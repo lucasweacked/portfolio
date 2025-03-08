@@ -1,3 +1,58 @@
 .formacao {
     padding: 2% 2%;
 }
+
+.formacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formacao__conteudo__titulo {
+    font-family: var(--fontPrincipal);
+    font-size: 1.6rem;
+    color: var(--corBranco);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formacao__conteudo__ensino,
+.formacao__conteudo__cursos,
+.formacao__conteudo__idiomas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+
+.formacao__conteudo__ensino__titulo,
+.formacao__conteudo__cursos__titulo,
+.formacao__conteudo__idiomas__titulo {
+    font-family: var(--fontPrincipal);
+    font-size: 1.3rem;
+    color: var(--corBranco);
+}
+
+.formacao__conteudo__ensino__paragrafo,
+.formacao__conteudo__idiomas__paragrafo{
+    font-family: var(--fontSecundaria);
+    font-size: 1.1rem;
+    color: var(--corBranco);
+}
+
+.formacao__conteudo__cursos__curso {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formacao__conteudo__cursos__cursos {
+    list-style: none;
+    font-family: var(--fontSecundaria);
+    font-size: 1.1rem;
+    color: var(--corBranco);
+}
+
+.formacao__conteudo__cursos__cursos a {
+    color: var(--corBranco);
+}

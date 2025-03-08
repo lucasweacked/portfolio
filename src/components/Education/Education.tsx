@@ -86,53 +86,61 @@ export default function Education() {
     <>
       <section className={style.formacao} id="formacao">
         <section className={style.formacao__conteudo}>
-          <section className={style.formacao__conteudo__ensino}>
-            <h2 className={style.formacao__conteudo__ensino__titulo}>
-              <i className="ri-graduation-cap-line" /> Educação
-            </h2>
-            <p className={style.formacao__conteudo__ensino__paragrafo}>
-              Sistemas de Informação - Universidade Santa Cecília (UNISANTA)
-            </p>
-            <p className={style.formacao__conteudo__ensino__paragrafo}>
-              <i className="ri-calendar-2-line" /> 2023 - presente
-            </p>
-            <p className={style.formacao__conteudo__ensino__paragrafo}>
-              4º Semestre
-            </p>
-          </section>
+          <h2 className={style.formacao__conteudo__titulo}>Formações</h2>
+          <div className={style.formacao__conteudo__container}>
+            <section className={style.formacao__conteudo__ensino}>
+              <h2 className={style.formacao__conteudo__ensino__titulo}>
+                <i className="ri-graduation-cap-line" /> Educação
+              </h2>
+              <p className={style.formacao__conteudo__ensino__paragrafo}>
+                Sistemas de Informação - Universidade Santa Cecília (UNISANTA)
+              </p>
+              <p className={style.formacao__conteudo__ensino__paragrafo}>
+                <i className="ri-calendar-2-line" /> 2023 - presente
+              </p>
+              <p className={style.formacao__conteudo__ensino__paragrafo}>
+                4º Semestre
+              </p>
+            </section>
 
-          <section className={style.formacao__conteudo__cursos}>
-            <h2 className={style.formacao__conteudo__cursos__titulo}>
-              <i className="ri-book-open-line" /> Cursos e Certificados
-            </h2>
-            <ul className={style.formacao__conteudo__cursos__curso}>
-              {cursos.map((item, index) => (
-                <li key={index} className={style.item}>
-                  <p>
-                    {item.curso} com{" "}
-                    <a
-                      href={item.certificado}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      certificado
-                    </a>
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </section>
-          <section className={style.formacao__conteudo__idiomas}>
-            <h2 className={style.formacao__conteudo__idiomas__titulo}>
-              <i className="ri-earth-line" /> Idiomas
-            </h2>
-            <p className={style.formacao__conteudo__idiomas__paragrafo}>
-              Inglês - Pré-intermediário
-            </p>
-            <p className={style.formacao__conteudo__idiomas__paragrafo}>
-              Espanhol - Básico
-            </p>
-          </section>
+            <section className={style.formacao__conteudo__cursos}>
+              <h2 className={style.formacao__conteudo__cursos__titulo}>
+                <i className="ri-book-open-line" /> Cursos e Certificados
+              </h2>
+              <ul className={style.formacao__conteudo__cursos__curso}>
+                {cursos.map((item, index) => (
+                  <li
+                    key={index}
+                    className={style.formacao__conteudo__cursos__cursos}
+                  >
+                    <p>
+                      {item.curso} com{" "}
+                      <a
+                        href={item.certificado}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        certificado
+                      </a>
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section className={style.formacao__conteudo__idiomas}>
+              <h2 className={style.formacao__conteudo__idiomas__titulo}>
+                <i className="ri-earth-line" /> Idiomas
+              </h2>
+              <p className={style.formacao__conteudo__idiomas__paragrafo}>
+                <span className="flag-icon flag-icon-us" /> Inglês -
+                Pré-intermediário
+              </p>
+              <p className={style.formacao__conteudo__idiomas__paragrafo}>
+                <span className="flag-icon flag-icon-es" /> Espanhol - Básico
+              </p>
+            </section>
+          </div>
         </section>
       </section>
     </>
