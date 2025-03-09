@@ -66,12 +66,18 @@
 }
 
 @media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 1rem;
+    }
+    
     .cabecalho__nav__links {
         gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
+
     .cabecalho__nav__links {
         gap: 0.75rem;
     }
