@@ -14,7 +14,7 @@ export default function Projects() {
     {
       titulo: "Site da Vivi da Inclusão",
       descricao:
-        "Site responsivo, acessível e que reflete a identidade visual da Vivi, desenvolvido com HTML, CSS e JavaScript. Criamos uma interface clara e inclusiva para transmitir sua mensagem.",
+        "Site responsivo, acessível e que reflete a identidade visual da Vivi, desenvolvido com HTML, CSS e JavaScript. Junto com dois amigos, tive a oportunidade de participar desse projeto, onde criamos uma interface clara e inclusiva para transmitir sua mensagem.",
       imagem: "../imagem/projetos/vivi.png",
       tecnologias: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/lucasweacked/vividainclusao",
