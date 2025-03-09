@@ -85,63 +85,54 @@ export default function Education() {
   return (
     <>
       <section className={style.formacao} id="formacao">
-        <section className={style.formacao__conteudo}>
-          <h2 className={style.formacao__conteudo__titulo}>Formações</h2>
-          <div className={style.formacao__conteudo__container}>
-            <section className={style.formacao__conteudo__ensino}>
-              <h2 className={style.formacao__conteudo__ensino__titulo}>
-                <i className="ri-graduation-cap-line" /> Educação
-              </h2>
-              <p className={style.formacao__conteudo__ensino__paragrafo}>
-                Sistemas de Informação - Universidade Santa Cecília (UNISANTA)
-              </p>
-              <p className={style.formacao__conteudo__ensino__paragrafo}>
-                <i className="ri-calendar-2-line" /> 2023 - presente
-              </p>
-              <p className={style.formacao__conteudo__ensino__paragrafo}>
-                4º Semestre
-              </p>
-            </section>
+        <div className={style.container}>
+          <h2 className={style.titulo}>FORMAÇÕES™</h2>
 
-            <section className={style.formacao__conteudo__cursos}>
-              <h2 className={style.formacao__conteudo__cursos__titulo}>
-                <i className="ri-book-open-line" /> Cursos e Certificados
-              </h2>
-              <ul className={style.formacao__conteudo__cursos__curso}>
-                {cursos.map((item, index) => (
-                  <li
-                    key={index}
-                    className={style.formacao__conteudo__cursos__cursos}
-                  >
-                    <p>
-                      {item.curso} com{" "}
-                      <a
-                        href={item.certificado}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        certificado
-                      </a>
-                    </p>
+          <div className={style.grid}>
+            <div className={style.grau}>
+              <div className={style.icone}>
+                <i className="ri-graduation-cap-line" />
+              </div>
+              <h3 className={style.subtitulo}>GRAU</h3>
+              <p className={style.curso}>Sistemas de Informação</p>
+              <p className={style.instituicao}>
+                Universidade Santa Cecília (UNISANTA)
+              </p>
+              <p className={style.periodo}>2023 - presente • 4º Semestre</p>
+            </div>
+
+            <div className={style.certificados}>
+              <div className={style.icone}>
+                <i className="ri-book-line" />
+              </div>
+              <h3 className={style.subtitulo}>CURSOS E CERTIFICADOS</h3>
+              <ul className={style.lista}>
+                {cursos.map((curso, index) => (
+                  <li key={index} className={style.item}>
+                    <a
+                      href={curso.certificado}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {curso.curso} com certificado
+                    </a>
                   </li>
                 ))}
               </ul>
-            </section>
+            </div>
 
-            <section className={style.formacao__conteudo__idiomas}>
-              <h2 className={style.formacao__conteudo__idiomas__titulo}>
-                <i className="ri-earth-line" /> Idiomas
-              </h2>
-              <p className={style.formacao__conteudo__idiomas__paragrafo}>
-                <span className="flag-icon flag-icon-us" /> Inglês -
-                Pré-intermediário
-              </p>
-              <p className={style.formacao__conteudo__idiomas__paragrafo}>
-                <span className="flag-icon flag-icon-es" /> Espanhol - Básico
-              </p>
-            </section>
+            <div className={style.idiomas}>
+              <div className={style.icone}>
+                <i className="ri-global-line" />
+              </div>
+              <h3 className={style.subtitulo}>IDIOMAS</h3>
+              <ul className={style.lista}>
+                <li className={style.idioma}>Inglês - Intermediário</li>
+                <li className={style.idioma}>Espanhol - Básico</li>
+              </ul>
+            </div>
           </div>
-        </section>
+        </div>
       </section>
     </>
   );

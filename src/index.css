@@ -3,13 +3,10 @@
 :root {
   --fontPrincipal: 'Inter', sans-serif;
   --fontSecundaria: 'Montserrat', sans-serif;
+  --fontMono: monospace, sans-serif;
 
   --corPreto: #212121;
-  --corBranco: #f7f7f7;
-
-  --corSnow: #fcf7f8;
-  --corMadder: #a31621;
-  --corDarkBlue: #102542;
+  --corBranco: #ffffff;
 }
 
 * {
