@@ -17,4 +17,5 @@
 
 body {
   background-color: var(--corPreto);
+  overflow-x: hidden;
 }
