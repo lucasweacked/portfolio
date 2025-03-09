@@ -1,39 +1,60 @@
+import React, { useState, useEffect } from "react";
 import style from "./Header.module.scss";
 
 export default function Header() {
-  function scrollToElement(
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) {
-    event.preventDefault();
-    const index = event.currentTarget.href.indexOf("#");
-    const id = event.currentTarget.href.slice(1 + index);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    const element = document.getElementById(id);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToElement = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    if (!href) return;
+
+    const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
-  }
+  };
 
   return (
-    <header className={style.cabecalho}>
-      <nav className={style.cabecalho__conteudo}>
-        <ul className={style.cabecalho__conteudo__links}>
-          <li className={style.cabecalho__conteudo__links_link}>
+    <header
+      className={`${style.cabecalho} ${
+        isScrolled ? style.cabecalho__scroll : ""
+      }`}
+    >
+      <nav className={style.cabecalho__nav}>
+        <div className={style.cabecalho__nav__logo}>
+          <a href="#inicio" onClick={scrollToElement}>
+            <i className="ri-code-s-slash-fill" />
+          </a>
+        </div>
+        <ul className={style.cabecalho__nav__links}>
+          <li>
             <a href="#inicio" onClick={scrollToElement}>
-              Início
+              INICIO
             </a>
           </li>
-          <li className={style.cabecalho__conteudo__links_link}>
+          <li>
             <a href="#formacao" onClick={scrollToElement}>
-              Formações
+              FORMAÇÕES
             </a>
           </li>
-          <li className={style.cabecalho__conteudo__links_link}>
+          <li>
             <a href="#projetos" onClick={scrollToElement}>
-              Projetos
+              PROJETOS
             </a>
           </li>
-          <li className={style.cabecalho__conteudo__links_link}>
+          <li>
             <a href="#contato" onClick={scrollToElement}>
-              Contato
+              CONTATO
             </a>
           </li>
         </ul>
