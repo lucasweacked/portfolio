@@ -17,7 +17,7 @@ export default function Contact() {
                 className={style.contato__conteudo__contato__info__email}
               >
                 <i className="ri-mail-line" />
-                lucasweacked21@gmail.com
+                devlucasbarros@gmail.com
               </a>
 
               <div className={style.contato__conteudo__contato__info__social}>
