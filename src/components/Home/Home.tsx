@@ -15,8 +15,11 @@ export default function Home() {
               </span>
             </h1>
             <p className={style.home__conteudo__principal__descricao}>
-              CRIANDO EXPERIÊNCIAS DIGITAIS COM PRECISÃO E ESTILO. BASEADO NO
-              BRASIL, TRABALHANDO GLOBALMENTE.
+              SOU LUCAS BARROS SIMON, 22 ANOS, ESTUDANTE DE SISTEMAS DE
+              INFORMAÇÃO NA UNISANTA, APAIXONADO POR DESENVOLVIMENTO WEB,
+              ANÁLISE DE DADOS E SOLUÇÕES CRIATIVAS. TAMBÉM ME INTERESSO POR
+              ARTE, CINEMA, MÚSICA E ESPORTES, INSPIRADO POR FIGURAS COMO STEVE
+              JOBS E MICHAEL JORDAN.
             </p>
           </div>
           <div className={style.home__conteudo__rodape}>
