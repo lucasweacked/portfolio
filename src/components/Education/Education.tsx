@@ -127,7 +127,7 @@ export default function Education() {
               </div>
               <h3 className={style.subtitulo}>IDIOMAS</h3>
               <ul className={style.lista}>
-                <li className={style.idioma}>Inglês - Intermediário</li>
+                <li className={style.idioma}>Inglês - Pré-Intermediário</li>
                 <li className={style.idioma}>Espanhol - Básico</li>
               </ul>
             </div>
