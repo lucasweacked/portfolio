@@ -3,6 +3,17 @@ import styles from "./Footer.module.scss";
 export default function Footer() {
   const anoAtual = new Date().getFullYear();
 
+  const scrollToElement = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    if (!href) return;
+
+    const element = document.querySelector(href);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className={styles.rodape}>
       <div className={styles.rodape__conteudo}>
@@ -19,22 +30,38 @@ export default function Footer() {
             <h3 className={styles.rodape__conteudo__navegacao__titulo}>NAV</h3>
             <ul className={styles.rodape__conteudo__navegacao__links}>
               <li>
-                <a href="#inicio" className={styles.rodape__conteudo__link}>
+                <a
+                  href="#inicio"
+                  className={styles.rodape__conteudo__link}
+                  onClick={scrollToElement}
+                >
                   INÍCIO
                 </a>
               </li>
               <li>
-                <a href="#formacao" className={styles.rodape__conteudo__link}>
+                <a
+                  href="#formacao"
+                  className={styles.rodape__conteudo__link}
+                  onClick={scrollToElement}
+                >
                   FORMAÇÕES
                 </a>
               </li>
               <li>
-                <a href="#projetos" className={styles.rodape__conteudo__link}>
+                <a
+                  href="#projetos"
+                  className={styles.rodape__conteudo__link}
+                  onClick={scrollToElement}
+                >
                   PROJETOS
                 </a>
               </li>
               <li>
-                <a href="#contato" className={styles.rodape__conteudo__link}>
+                <a
+                  href="#contato"
+                  className={styles.rodape__conteudo__link}
+                  onClick={scrollToElement}
+                >
                   CONTATO
                 </a>
               </li>
