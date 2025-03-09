@@ -27,6 +27,7 @@ export default function Projects() {
       imagem: "../imagem/projetos/mubi-react.png",
       tecnologias: ["React", "CSS", "JavaScript"],
       github: "https://github.com/lucasweacked/mubi-react",
+      live: "https://mubi-react.vercel.app/",
     },
     {
       titulo: "Cinema Database",
@@ -35,7 +36,7 @@ export default function Projects() {
       imagem: "../imagem/projetos/cinema-db.png",
       tecnologias: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/lucasweacked/desafio-alura",
-      live: "https://cinemadatabase.dev",
+      live: "https://lucasweacked.github.io/desafio-alura/",
     },
     {
       titulo: "Calculadora em Java",
