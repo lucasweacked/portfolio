@@ -17,7 +17,6 @@ export default function Projects() {
         "Site responsivo, acessível e que reflete a identidade visual da Vivi, desenvolvido com HTML, CSS e JavaScript. Junto com dois amigos, tive a oportunidade de participar desse projeto, onde criamos uma interface clara e inclusiva para transmitir sua mensagem.",
       imagem: "../imagem/projetos/vivi.png",
       tecnologias: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/lucasweacked/vividainclusao",
       live: "https://vividainclusao.com.br",
     },
     {
@@ -25,7 +24,7 @@ export default function Projects() {
       descricao:
         "Landing page desenvolvida em React, com design minimalista e uma experiência interativa que captura a essência da MUBI. O projeto está em desenvolvimento.",
       imagem: "../imagem/projetos/mubi-react.png",
-      tecnologias: ["React", "CSS", "JavaScript"],
+      tecnologias: ["React", "CSS", "TypeScript"],
       github: "https://github.com/lucasweacked/mubi-react",
       live: "https://mubi-react.vercel.app/",
     },

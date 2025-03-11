@@ -13,7 +13,7 @@ export default function Contact() {
           <div className={style.contato__conteudo__contato}>
             <div className={style.contato__conteudo__contato__info}>
               <a
-                href="mailto:lucasweacked21@gmail.com"
+                href="mailto:devlucasbarros@gmail.com"
                 className={style.contato__conteudo__contato__info__email}
               >
                 <i className="ri-mail-line" />

@@ -93,7 +93,7 @@ export default function Education() {
               <div className={style.icone}>
                 <i className="ri-graduation-cap-line" />
               </div>
-              <h3 className={style.subtitulo}>GRAU</h3>
+              <h3 className={style.subtitulo}>FORMAÇÃO ACADÊMICA</h3>
               <p className={style.curso}>Sistemas de Informação</p>
               <p className={style.instituicao}>
                 Universidade Santa Cecília (UNISANTA)
