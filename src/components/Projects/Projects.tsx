@@ -53,6 +53,14 @@ export default function Projects() {
       tecnologias: ["C#"],
       github: "https://github.com/lucasweacked/screen-sound",
     },
+    {
+      titulo: "API-Usuarios",
+      descricao:
+        "Desenvolvi minha primeira API de gerenciamento de usuários com Node.js, Express.js e Prisma. Ela permite criar, listar, atualizar e excluir usuários de forma simples e eficiente.",
+      imagem: "../../imagem/projetos/api.png",
+      tecnologias: ["Node.js", "Express.js", "JavaScript", "MongoDB", "Prisma"],
+      github: "https://github.com/lucasweacked/api-usuarios",
+    },
   ];
 
   return (
