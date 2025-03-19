@@ -25,7 +25,7 @@ export default function Projects() {
         "Landing page desenvolvida em React, com design minimalista e uma experiência interativa que captura a essência da MUBI. O projeto está em desenvolvimento.",
       imagem: "../imagem/projetos/mubi-react.png",
       tecnologias: ["React", "CSS", "TypeScript"],
-      github: "https://github.com/lucasweacked/mubi-react",
+      github: "https://github.com/21lucasbarros/mubi-react",
       live: "https://mubi-react.vercel.app/",
     },
     {
@@ -34,8 +34,8 @@ export default function Projects() {
         "Projeto web em HTML, CSS e JavaScript que permite busca dinâmica de filmes e diretores. Foco em usabilidade e experiência do usuário.",
       imagem: "../imagem/projetos/cinema-db.png",
       tecnologias: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/lucasweacked/desafio-alura",
-      live: "https://lucasweacked.github.io/desafio-alura/",
+      github: "https://github.com/21lucasbarros/desafio-alura",
+      live: "https://21lucasbarros.github.io/desafio-alura/",
     },
     {
       titulo: "Calculadora em Java",
@@ -43,7 +43,7 @@ export default function Projects() {
         "Calculadora desenvolvida em Java com interface Swing, realizando operações básicas e avançadas. A aplicação segue boas práticas de programação orientada a objetos.",
       imagem: "../imagem/projetos/calculator.png",
       tecnologias: ["Java"],
-      github: "https://github.com/lucasweacked/calculator",
+      github: "https://github.com/21lucasbarros/calculator",
     },
     {
       titulo: "Screen Sound",
@@ -51,7 +51,7 @@ export default function Projects() {
         "Aplicação em C# para gerenciar informações sobre bandas e artistas, combinando lógica de programação, manipulação de dados e interface intuitiva.",
       imagem: "../imagem/projetos/screen-sound.png",
       tecnologias: ["C#"],
-      github: "https://github.com/lucasweacked/screen-sound",
+      github: "https://github.com/21lucasbarros/screen-sound",
     },
     {
       titulo: "API-Usuarios",
@@ -59,7 +59,7 @@ export default function Projects() {
         "Desenvolvi minha primeira API de gerenciamento de usuários com Node.js, Express.js e Prisma. Ela permite criar, listar, atualizar e excluir usuários de forma simples e eficiente.",
       imagem: "../../imagem/projetos/api.png",
       tecnologias: ["Node.js", "Express.js", "JavaScript", "MongoDB", "Prisma"],
-      github: "https://github.com/lucasweacked/api-usuarios",
+      github: "https://github.com/21lucasbarros/api-usuarios",
     },
   ];
 

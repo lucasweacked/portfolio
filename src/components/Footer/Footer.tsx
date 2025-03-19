@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className={styles.rodape__conteudo__social__links}>
               <li>
                 <a
-                  href="https://github.com/lucasweacked"
+                  href="https://github.com/21lucasbarros"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.rodape__conteudo__link}

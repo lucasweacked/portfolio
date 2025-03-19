@@ -32,7 +32,7 @@ export default function Contact() {
                   <i className="ri-linkedin-box-line" />
                 </a>
                 <a
-                  href="https://github.com/lucasweacked"
+                  href="https://github.com/21lucasbarros"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={
